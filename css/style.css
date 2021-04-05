@@ -39,8 +39,25 @@ nav ul a:before {
 nav ul a:hover:before {
 	opacity: 1;
 }
+.navbar-toggler {
+	height: 30px;
+	position: absolute;
+	right: 15px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	border: 1px solid white;
+}
 header .right-side a {
 	text-decoration: none !important;
 	font-size: 18px;
 	color: black !important;
+}
+.top-soc {
+	white-space: nowrap;
+}
+@media (max-width: 1199px) {
+	header:before {
+		display: none;
+	}
 }
