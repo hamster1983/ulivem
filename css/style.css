@@ -1,9 +1,13 @@
-@font-face {
+/*@font-face {
 	font-family: OpenSans;
 	src: url(../fonts/OpenSans-Regular.ttf);
+}*/
+@font-face {
+	font-family: Exo2;
+	src: url(../fonts/Exo2Regular.ttf);
 }
 body {
-	font-family: OpenSans, sans-serif;
+	font-family: Exo2, sans-serif;
 }
 header:before {
 	content: '';
@@ -78,7 +82,7 @@ header .right-side a {
 	width: 55%;
 }
 .carousel-item {
-	transition: .5s;
+	transition: .5s !important;
 }
 .top-slider-indicators {
 	list-style: none;
