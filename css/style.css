@@ -12,10 +12,7 @@ header:before {
 	top: 0;
 	bottom: 0;
 	left: 0;
-	width: 25%;
-	background-color: #000;
-}
-header .left-side {
+	width: 45%;
 	background-color: #000;
 }
 nav ul {
@@ -48,6 +45,9 @@ nav ul a:hover:before {
 	margin: auto;
 	border: 1px solid white;
 }
+header .right-side {
+	padding-left: 30px;
+}
 header .right-side a {
 	text-decoration: none !important;
 	font-size: 18px;
@@ -56,8 +56,85 @@ header .right-side a {
 .top-soc {
 	white-space: nowrap;
 }
-@media (max-width: 1199px) {
+@media (max-width: 1600px) {
+	header .right-side {
+		padding-left: 40px;
+	}
+}
+@media (max-width: 991px) {
 	header:before {
 		display: none;
 	}
+	header .left-side {
+		background-color: #000;
+	}
+}
+
+.top-slider-text {
+	width: 45%;
+	padding-left: 22%;
+}
+.top-slider-pic {
+	width: 55%;
+}
+.carousel-item {
+	transition: .5s;
+}
+.top-slider-indicators {
+	list-style: none;
+}
+.top-slider-indicators li {
+	cursor: pointer;
+	font-size: 36px;
+	margin: 10px;
+	position: relative;
+	color: #c4c4c4;
+}
+.top-slider-indicators li:before {
+	content: '';
+	width: 100%;
+	height: 5px;
+	background-color: #c4c4c4;
+	position: absolute;
+	bottom: -5px;
+}
+.top-slider-indicators li.active {
+	color: #000;
+	cursor: default;
+}
+.top-slider-indicators li.active:before {
+	background-color: #000;
+}
+.top-slider-text h2 {
+	font-size: 48px;
+	line-height: 52px;
+	padding-top: 60px;
+}
+.top-slider-text h2 span {
+	font-size: 34px;
+}
+.top-slider-text h3 {
+	font-size: 34px;
+}
+.top-slider-ul {
+	padding-left: 25px;
+}
+.top-slider-ul li {
+	font-size: 13px;
+	line-height: 23px;
+	list-style: none;
+	position: relative;
+}
+.top-slider-ul li:before {
+	content: '';
+	display: block;
+	border: 5px solid transparent;
+	border-left: 7px solid #FFF66B;
+	position: absolute;
+	left: -10px;
+	top: 7px;
+}
+.top-slider-detail {
+	color: #000 !important;
+	text-decoration: none !important;
 }
