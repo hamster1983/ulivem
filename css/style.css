@@ -121,7 +121,7 @@ header .right-side a {
 	font-size: 34px;
 }
 .top-slider-ul {
-	padding-left: 25px;
+	padding-left: 30px;
 }
 .top-slider-ul li {
 	font-size: 13px;
@@ -132,13 +132,148 @@ header .right-side a {
 .top-slider-ul li:before {
 	content: '';
 	display: block;
-	border: 5px solid transparent;
-	border-left: 7px solid #FFF66B;
+	/*border: 5px solid transparent;
+	border-left: 7px solid #FFF66B;*/
+	border: 3px solid #F2C94C;
+	width: 11px;
+	height: 11px;
+	border-radius: 50%;
 	position: absolute;
-	left: -10px;
-	top: 7px;
+	left: -20px;
+	top: 6px;
 }
 .top-slider-detail {
 	color: #000 !important;
 	text-decoration: none !important;
+	position: relative;
+}
+.top-slider-detail span {
+	position: absolute;
+	display: block;
+	width: 20px;
+	height: 4px;
+	background-color: #000;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	left: 100px;
+}
+.top-slider-detail span:before,
+.top-slider-detail span:after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 15px;
+	height: 3px;
+	background-color: #000;
+	transform-origin: 100% 100%;
+}
+.top-slider-detail span:before {
+	transform: rotate(45deg);
+	right: 0px;
+}
+.top-slider-detail span:after {
+	transform: rotate(-45deg);
+	right: -2px;
+}
+
+#missia {
+	background-image: url('../img/missia-fon.jpg');
+	background-size: cover;
+	background-position: 50% 50%;
+	/*height: 975px;*/
+	padding: 60px 0 150px;
+}
+#missia .container-xl {
+	padding-left: 360px;
+}
+#missia h2 {
+	font-size: 48px;
+}
+#missia h3 {
+	color: #828282;
+	position: relative;
+	font-size: 36px;
+}
+#missia h3:before {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 100px;
+	height: 6px;
+	background-color: #fff;
+	left: 0;
+	bottom: -10px;
+}
+#missia p {
+	font-size: 18px;
+	line-height: 26px;
+}
+#missia p.font-weight-bold {
+	line-height: 30px;
+}
+.missia-detail {
+	width: 100%;
+	max-width: 360px;
+	text-decoration: none !important;
+	background-color: #000;
+	position: relative;
+}
+.missia-detail span {
+	position: absolute;
+	display: block;
+	width: 20px;
+	height: 3px;
+	background-color: #FFF66B;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	right: 100px;
+}
+.missia-detail span:before,
+.missia-detail span:after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 15px;
+	height: 3px;
+	background-color: #FFF66B;
+	transform-origin: 100% 100%;
+}
+.missia-detail span:before {
+	transform: rotate(45deg);
+	right: 0px;
+}
+.missia-detail span:after {
+	transform: rotate(-45deg);
+	right: -2px;
+}
+@media (max-width: 1199px) {
+	#missia .container-xl {
+		padding-left: 22%;
+	}
+}
+@media (max-width: 991px) {
+	#missia .container-xl {
+		padding-left: 15%;
+	}
+}
+@media (max-width: 767px) {
+	#missia .container-xl {
+		padding-left: 15px;
+	}
+	.missia-detail {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+#proekty {
+	height: 1545px;
+	background-image: url('../img/proekty-fon.png');
+	background-size: cover;
+	background-position: 50% 50%;
+	position: relative;
+	top: -155px;
+	border: 1px solid green;
 }
