@@ -181,7 +181,6 @@ header .right-side a {
 	background-image: url('../img/missia-fon.jpg');
 	background-size: cover;
 	background-position: 50% 50%;
-	/*height: 975px;*/
 	padding: 60px 0 150px;
 }
 #missia .container-xl {
@@ -259,6 +258,9 @@ header .right-side a {
 	}
 }
 @media (max-width: 767px) {
+	#missia {
+		padding: 60px 0;
+	}
 	#missia .container-xl {
 		padding-left: 15px;
 	}
@@ -269,11 +271,177 @@ header .right-side a {
 }
 
 #proekty {
-	height: 1545px;
 	background-image: url('../img/proekty-fon.png');
 	background-size: cover;
 	background-position: 50% 50%;
 	position: relative;
-	top: -155px;
-	border: 1px solid green;
+	top: -160px;
+	padding: 160px 0 200px;
+	margin-bottom: -200px;
+}
+#proekty h2 {
+	font-size: 48px;
+	margin-bottom: 70px;
+}
+#proekty h3 {
+	font-size: 36px;
+}
+#proekty h3 span:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 6px;
+	background-color: #FFF66B;
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+}
+.proekty-wrap {
+	margin: 0 -15px;
+}
+.proekt-item {
+	width: 350px;
+	margin: 0 10px;
+}
+.proekt-item img {
+	height: 215px;
+}
+.proekt-item h5 {
+	font-size: 22px;
+	padding-top: 5px;
+}
+.proekty-detail {
+	width: 100%;
+	max-width: 360px;
+	text-decoration: none !important;
+	background-color: #000;
+	position: relative;
+	font-size: 24px;
+	border: 2px solid #FFF66B;
+	margin: 70px auto 30px;
+}
+.proekty-detail span {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 3px;
+	background-color: #FFF66B;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	right: 40px;
+}
+.proekty-detail span:before,
+.proekty-detail span:after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 15px;
+	height: 3px;
+	background-color: #FFF66B;
+	transform-origin: 100% 100%;
+}
+.proekty-detail span:before {
+	transform: rotate(45deg);
+	right: 0px;
+}
+.proekty-detail span:after {
+	transform: rotate(-45deg);
+	right: -2px;
+}
+@media (max-width: 1199px) {
+	#proekty {
+		top: -200px;
+		margin-bottom: -240px;
+	}
+}
+@media (max-width: 767px) {
+	#proekty {
+		top: 0;
+		background-image: none;
+		background-color: #000;
+		padding: 70px 0;
+		margin-bottom: 0;
+	}
+	.proekty-detail {
+		margin: 30px auto 0;
+	}
+}
+@media (max-width: 400px) {
+	.proekt-item img {
+		height: auto;
+	}
+}
+
+#uslugi {
+	padding: 0 0 70px;
+}
+#uslugi h2 {
+	font-size: 48px;
+}
+#uslugi h3 {
+	font-size: 36px;
+	color: #828282;
+}
+#uslugi h3 span:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 6px;
+	background-color: #FFF66B;
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+}
+#uslugi p.text-center {
+	font-size: 22px;
+}
+.uslugi-wrap {
+	margin: 0 -15px;
+}
+.uslugi-item {
+	width: 350px;
+	margin: 0 10px;
+}
+.uslugi-item a {
+	background-color: #000;
+	bottom: 0;
+	left: 30px;
+	right: 30px;
+	text-decoration: none !important;
+}
+@media (max-width: 767px) {
+	#uslugi {
+		padding: 70px 0 50px;
+	}
+}
+
+#formaty {
+	background-color: #F2F2F2;
+}
+#formaty h2 {
+	font-size: 48px;
+}
+#formaty h3 {
+	font-size: 36px;
+	color: #828282;
+}
+#formaty h3 span:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 6px;
+	background-color: #FFF66B;
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+}
+#formaty .carousel-item {
+	border: 1px solid red;
+	min-height: 600px;
+	text-align: center;
+}
+#formaty .carousel-item img {
+	max-height: 100%;
+	max-width: 100%;
 }
