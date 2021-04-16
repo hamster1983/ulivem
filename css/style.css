@@ -1113,3 +1113,140 @@ footer:before {
 .foot-contacts a {
 	text-decoration: none !important;
 }
+
+/* modal */
+.modal-yellow .modal-dialog,
+.modal-black .modal-dialog {
+	width: 100%;
+	max-width: 1380px;
+}
+.modal-yellow .modal-content,
+.modal-black .modal-content {
+	border-radius: 0;
+	padding: 60px 80px 40px;
+	border: none;
+	background-size: cover;
+}
+.modal-yellow input,
+.modal-black input {
+	background: #fff;
+	border: 1px solid #212121;
+	border-radius: 0;
+	height: 60px;
+}
+.modal-yellow textarea,
+.modal-black textarea{
+	background: #fff;
+	border: 1px solid #212121;
+	width: 100%;
+	resize: none;
+	height: 100px;
+	padding: 10px;
+}
+.modal-yellow p.text-center,
+.modal-black p.text-center {
+	font-size: 24px;
+}
+.modal-yellow .close,
+.modal-black .close {
+	right: 20px;
+	top: 15px;
+	cursor: pointer;
+}
+@media (max-width: 991px) {
+	.modal-yellow .modal-content,
+	.modal-black .modal-content {
+		padding: 40px 30px 30px;
+	}
+}
+@media (max-width: 400px) {
+	.modal-yellow .modal-content,
+	.modal-black .modal-content {
+		padding: 20px 15px;
+	}
+	.modal-yellow .forma-submit span,
+	.modal-black .forma-submit span {
+		right: 40px;
+	}
+}
+
+
+.modal-yellow .modal-content {
+	background-image: url('../img/modal-yellow-fon.jpg');
+}
+.modal-yellow h2 {
+	font-size: 48px;
+}
+.modal-yellow h3 {
+	font-size: 36px;
+	color: #828282;
+}
+.modal-yellow h3 span:before {
+	content: '';
+	display: block;
+	width: 100%;
+	max-width: 320px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 6px;
+	background-color: #fff;
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+}
+
+
+
+.modal-black .modal-content {
+	background-image: url('../img/modal-black-fon.jpg');
+}
+.modal-black h2 {
+	font-size: 48px;
+	color: #fff;
+}
+.modal-black h3 {
+	font-size: 36px;
+	color: #fff;
+}
+.modal-black h3 span:before {
+	content: '';
+	display: block;
+	width: 100%;
+	max-width: 320px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 6px;
+	background-color: #FFF66B;
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+}
+.modal-black p.text-center,
+.modal-black .close {
+	color: #fff;
+}
+.modal-black .forma-submit {
+	border: 1px solid #FFF66B;
+}
+
+
+/* pages */
+.yellow-line {
+	background-color: #FFF66B;
+}
+.yellow-line .home {
+	top: -2px;
+}
+#uslugi.page {
+	padding: 70px 0;
+}
+#uslugi.page .uslugi-item p {
+	font-size: 14px;
+}
+@media (max-width: 575px) {
+	#uslugi.page {
+		padding: 50px 0 0;
+	}
+}
