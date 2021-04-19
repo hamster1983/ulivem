@@ -1170,7 +1170,6 @@ footer:before {
 	}
 }
 
-
 .modal-yellow .modal-content {
 	background-image: url('../img/modal-yellow-fon.jpg');
 }
@@ -1195,8 +1194,6 @@ footer:before {
 	bottom: -10px;
 	left: 0;
 }
-
-
 
 .modal-black .modal-content {
 	background-image: url('../img/modal-black-fon.jpg');
@@ -1231,7 +1228,6 @@ footer:before {
 	border: 1px solid #FFF66B;
 }
 
-
 /* pages */
 .yellow-line {
 	background-color: #FFF66B;
@@ -1248,5 +1244,120 @@ footer:before {
 @media (max-width: 575px) {
 	#uslugi.page {
 		padding: 50px 0 0;
+	}
+}
+
+#about {
+	background-image: url('../img/about-fon.jpg');
+	background-size: cover;
+	background-position: 50% 50%;
+	padding: 50px 0 200px;
+}
+#about h2 {
+	font-size: 48px;
+}
+#about h3 {
+	font-size: 36px;
+	color: #828282;
+}
+#about h3:before {
+	content: '';
+	display: block;
+	width: 100%;
+	max-width: 270px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 6px;
+	background-color: #FFF66B;
+	position: absolute;
+	bottom: -10px;
+}
+.about-item-wrap {
+	padding: 140px 0 20px;
+}
+.about-item-pic {
+	width: 200px;
+	height: 200px;
+	border: 5px solid #FFF;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.about-item p {
+	font-size: 30px;
+	line-height: 39px;
+	padding: 20px 0 50px;
+}
+.about-forma h2:before {
+	content: '';
+	display: block;
+	width: 100%;
+	max-width: 250px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 6px;
+	background-color: #FFF66B;
+	position: absolute;
+	bottom: 5px;
+}
+@media (max-width: 1199px) {
+	.about-item-wrap {
+		padding: 70px 0 0;
+	}
+}
+@media (max-width: 575px) {
+	#about {
+		padding: 50px 0;
+	}
+}
+
+#contacts {
+	background-color: #e8e5e8;
+}
+.cont-text {
+	width: 100%;
+	max-width: 500px;
+	height: 500px;
+}
+.cont-text h2 {
+	font-size: 48px;
+}
+.cont-text h2:before {
+	content: '';
+	display: block;
+	width: 100%;
+	max-width: 270px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 6px;
+	background-color: #FFF66B;
+	position: absolute;
+	bottom: -10px;
+}
+.cont-item {
+	padding-left: 80px;
+}
+.cont-item a {
+	font-size: 24px;
+	color: #000 !important;
+	text-decoration: none !important;
+}
+.cont-icon {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-color: #FFF66B;
+}
+.messenger {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #000;
+}
+@media (max-width: 1199px) {
+	.cont-item {
+		padding-left: 0;
 	}
 }
